@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header role="navigation">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="posts">
+            <article>
+                <img src="post 1.webp" alt="Imagem do Post 1" class="post-image">
+                <h2>Maravilhas do mundo digital</h2>
+                <p>Explorando as maravilhas do mundo digital: como a tecnologia transforma nossas vidas todos os dias.</p>
+            </article>
+            <article>
+                <img src="post 2.jpg" alt="Imagem do Post 2" class="post-image">
+                <h2>Aprendizado contínuo</h2>
+                <p>Aprendizado contínuo: dicas práticas para se manter atualizado nas últimas tendências de tecnologia.</p>
+            </article>
+            <article>
+                <img src="post 3.jpg" alt="Imagem do Post 3" class="post-image">
+                <h2>A importância do design</h2>
+                <p>A importância do design centrado no usuário: como a empatia pode melhorar a experiência do cliente.</p>
+            </article>
+        </section>
+        <section id="about" class="about">
+            <h2>Sobre Mim</h2>
+            <p>Olá! Sou a Daniele Pecenin, um entusiasta de tecnologia e design, apaixonado por criar experiências digitais que impactam positivamente a vida das pessoas. Acredito que a tecnologia deve ser acessível e intuitiva, e trabalho continuamente para aprender e aplicar as melhores práticas em design centrado no usuário.</p>
+        </section>
+        <section class="contact">
+            <h2>Contato</h2>
+            <form>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,131 @@
+/* Estilo Global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Esquema de cores */
+:root {
+    --cor-primaria: #4CAF50; /* Verde */
+    --cor-secundaria: #2196F3; /* Azul */
+    --cor-terciaria: #FF9800; /* Laranja */
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--cor-primaria);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+nav a:hover {
+    background-color: var(--cor-secundaria);
+    border-radius: 5px;
+}
+
+/* Posts */
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 60px; /* Espaço para o cabeçalho fixo */
+    padding: 20px;
+}
+
+.posts article {
+    background-color: white;
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 30%; /* 3 colunas */
+    box-sizing: border-box; /* Usar box model */
+}
+
+.post-image {
+    width: 100%; /* Imagem responsiva */
+    height: 200px; /* Altura fixa para uniformidade */
+    object-fit: cover; /* Preencher o espaço de forma proporcional */
+    border-radius: 5px; /* Cantos arredondados */
+}
+
+/* Seção Sobre Mim */
+.about {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Formulário de Contato */
+.contact {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.contact label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact textarea {
+    resize: vertical; /* Permitir redimensionamento vertical */
+}
+
+.contact input[type="submit"] {
+    background-color: var(--cor-terciaria);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact input[type="submit"]:hover {
+    background-color: var(--cor-secundaria);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .posts {
+        flex-direction: column; /* Mudar para coluna em telas menores */
+    }
+
+    .posts article {
+        flex: 1 1 100%; /* Um post por linha */
+    }
+}
